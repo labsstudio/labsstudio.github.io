@@ -1,231 +1,630 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Fri Jul 17 2020 05:07:22 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="5b76c1b5f9429557ac753ec9" data-wf-site="5b76c1b5f942955165753ec4">
-<head>
-  <meta charset="utf-8">
-  <title>Luiz&#x27;s First Project</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/luizs-first-project-4ff7f0.webflow.css" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Roboto:300,regular,500"]  }});</script>
-  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.png" rel="apple-touch-icon">
-</head>
-<body>
-  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navigation-bar w-nav">
-    <div class="w-container"><a href="index.html" aria-current="page" class="brand-link w-nav-brand w--current"><img src="images/back5.png" width="50" srcset="images/back5-p-500.png 500w, images/back5-p-800.png 800w, images/back5-p-1080.png 1080w, images/back5.png 1920w" sizes="50px" alt=""></a>
-      <nav role="navigation" class="navigation-menu w-nav-menu"><a href="index.html" aria-current="page" class="navigation-link w-nav-link w--current">INICIO</a><a href="index.html" aria-current="page" class="navigation-link w-nav-link w--current">CONTATO</a></nav>
-      <div class="hamburger-button w-nav-button">
-        <div class="w-icon-nav-menu"></div>
+<html
+  data-wf-page="5b76c1b5f9429557ac753ec9"
+  data-wf-site="5b76c1b5f942955165753ec4"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Labs Studio</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/webflow.css" rel="stylesheet" type="text/css" />
+    <link
+      href="css/luizs-first-project-4ff7f0.webflow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+            "Roboto:300,regular,500",
+          ],
+        },
+      });
+    </script>
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <!-- <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon"> -->
+    <!-- <link href="images/webclip.png" rel="apple-touch-icon"> -->
+  </head>
+  <body>
+    <div
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      role="banner"
+      class="navigation-bar w-nav"
+    >
+      <div class="w-container">
+        <a
+          href="index.html"
+          aria-current="page"
+          class="brand-link w-nav-brand w--current"
+          ><img
+            src="images/back5.png"
+            width="50"
+            srcset="
+              images/back5-p-500.png   500w,
+              images/back5-p-800.png   800w,
+              images/back5-p-1080.png 1080w,
+              images/back5.png        1920w
+            "
+            sizes="50px"
+            alt=""
+        /></a>
+        <nav role="navigation" class="navigation-menu w-nav-menu">
+          <a
+            href="index.html"
+            aria-current="page"
+            class="navigation-link w-nav-link w--current"
+            >INICIO</a
+          ><a
+            href="index.html"
+            aria-current="page"
+            class="navigation-link w-nav-link w--current"
+            >CONTATO</a
+          >
+        </nav>
+        <div class="hamburger-button w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="hero-section centered">
-    <div data-ix="new-interaction" class="w-container">
-      <h1 data-ix="fade-in-bottom-page-loads" class="hero-heading">Labs studio</h1>
-      <div data-ix="fade-in-bottom-page-loads" class="hero-subheading">A Game Company</div>
-      <div data-ix="fade-in-bottom-page-loads"><a href="#" class="hollow-button all-caps">Saiba mais</a></div>
-    </div>
-  </div>
-  <header id="hero" class="hero">
-    <div class="flex-container w-container">
-      <div>
-        <h1 class="heading-2">Mercado global de Games</h1>
-        <p>No mundo, a indústria de <strong>jogos eletrônicos</strong> deverá movimentar US$ 152 bilhões em 2019, segundo dados da pesquisa Global Games Market, da Newzoo</p>
+    <div class="hero-section centered">
+      <div data-ix="new-interaction" class="w-container">
+        <h1 data-ix="fade-in-bottom-page-loads" class="hero-heading">
+          Labs studio
+        </h1>
+        <div data-ix="fade-in-bottom-page-loads" class="hero-subheading">
+          A Game Company
+        </div>
+        <div data-ix="fade-in-bottom-page-loads">
+          <a href="#" class="hollow-button all-caps">Saiba mais</a>
+        </div>
       </div>
-      <div class="hero-image-mask"><img src="images/mercvado.png" srcset="images/mercvado-p-500.png 500w, images/mercvado.png 672w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 295.703125px, 443.921875px" alt="" class="hero-image"></div>
     </div>
-  </header>
-  <section id="gallery" class="gallery-2">
-    <div class="centered-container w-container">
-      <h2>COMO CONSEGUIR ATENÇÃO DAS CRIANÇAS?</h2>
-      <div class="gallery-grid-container-2"><a href="#" id="w-node-c2ef62dc97e5-ac753ec9" class="gallery-lightbox w-inline-block w-lightbox"><img src="images/arturo-rey-0FSNRJPD3Mw-unsplash.jpg" srcset="images/arturo-rey-0FSNRJPD3Mw-unsplash-p-800.jpeg 800w, images/arturo-rey-0FSNRJPD3Mw-unsplash-p-1600.jpeg 1600w, images/arturo-rey-0FSNRJPD3Mw-unsplash-p-2600.jpeg 2600w, images/arturo-rey-0FSNRJPD3Mw-unsplash-p-3200.jpeg 3200w, images/arturo-rey-0FSNRJPD3Mw-unsplash.jpg 6000w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 167px, 220px" alt="" class="gallery-thumbnail"><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "cdnUrl": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
-      "width": 150,
-      "height": 150,
-      "fileName": "image-placeholder.svg",
-      "origFileName": "image-placeholder.svg",
-      "url": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
-      "_id": "example_img",
-      "type": "image",
-      "fileSize": 2063
-    }
-  ],
-  "group": "gallery"
-}</script></a><a href="#" class="gallery-lightbox w-inline-block w-lightbox"><img src="images/samantha-sophia-fqyEoItOUGE-unsplash.jpg" srcset="images/samantha-sophia-fqyEoItOUGE-unsplash-p-1080.jpeg 1080w, images/samantha-sophia-fqyEoItOUGE-unsplash-p-1600.jpeg 1600w, images/samantha-sophia-fqyEoItOUGE-unsplash-p-2000.jpeg 2000w, images/samantha-sophia-fqyEoItOUGE-unsplash-p-2600.jpeg 2600w, images/samantha-sophia-fqyEoItOUGE-unsplash-p-3200.jpeg 3200w, images/samantha-sophia-fqyEoItOUGE-unsplash.jpg 5184w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 167px, 220px" alt="" class="gallery-thumbnail"><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "cdnUrl": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
-      "width": 150,
-      "height": 150,
-      "fileName": "image-placeholder.svg",
-      "origFileName": "image-placeholder.svg",
-      "url": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
-      "_id": "example_img",
-      "type": "image",
-      "fileSize": 2063
-    }
-  ],
-  "group": "gallery"
-}</script></a><a href="#" class="gallery-lightbox w-inline-block w-lightbox"><img src="images/markus-spiske-OO89_95aUC0-unsplash.jpg" srcset="images/markus-spiske-OO89_95aUC0-unsplash-p-500.jpeg 500w, images/markus-spiske-OO89_95aUC0-unsplash-p-800.jpeg 800w, images/markus-spiske-OO89_95aUC0-unsplash-p-1080.jpeg 1080w, images/markus-spiske-OO89_95aUC0-unsplash-p-1600.jpeg 1600w, images/markus-spiske-OO89_95aUC0-unsplash-p-2000.jpeg 2000w, images/markus-spiske-OO89_95aUC0-unsplash-p-2600.jpeg 2600w, images/markus-spiske-OO89_95aUC0-unsplash-p-3200.jpeg 3200w, images/markus-spiske-OO89_95aUC0-unsplash.jpg 3840w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 167px, 220px" alt="" class="gallery-thumbnail"><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "cdnUrl": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
-      "width": 150,
-      "height": 150,
-      "fileName": "image-placeholder.svg",
-      "origFileName": "image-placeholder.svg",
-      "url": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
-      "_id": "example_img",
-      "type": "image",
-      "fileSize": 2063
-    }
-  ],
-  "group": "gallery"
-}</script></a><a href="#" class="gallery-lightbox w-inline-block w-lightbox"><img src="images/jelleke-vanooteghem-chuzevDl4qM-unsplash.jpg" srcset="images/jelleke-vanooteghem-chuzevDl4qM-unsplash-p-1080.jpeg 1080w, images/jelleke-vanooteghem-chuzevDl4qM-unsplash-p-1600.jpeg 1600w, images/jelleke-vanooteghem-chuzevDl4qM-unsplash-p-2000.jpeg 2000w, images/jelleke-vanooteghem-chuzevDl4qM-unsplash-p-2600.jpeg 2600w, images/jelleke-vanooteghem-chuzevDl4qM-unsplash-p-3200.jpeg 3200w, images/jelleke-vanooteghem-chuzevDl4qM-unsplash.jpg 5184w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 167px, 220px" alt="" class="gallery-thumbnail"><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "cdnUrl": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
-      "width": 150,
-      "height": 150,
-      "fileName": "image-placeholder.svg",
-      "origFileName": "image-placeholder.svg",
-      "url": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
-      "_id": "example_img",
-      "type": "image",
-      "fileSize": 2063
-    }
-  ],
-  "group": "gallery"
-}</script></a><a href="#" class="gallery-lightbox w-inline-block w-lightbox"><img src="images/hello-i-m-nik-OOJAUol19oo-unsplash.jpg" srcset="images/hello-i-m-nik-OOJAUol19oo-unsplash-p-500.jpeg 500w, images/hello-i-m-nik-OOJAUol19oo-unsplash-p-800.jpeg 800w, images/hello-i-m-nik-OOJAUol19oo-unsplash-p-1080.jpeg 1080w, images/hello-i-m-nik-OOJAUol19oo-unsplash-p-1600.jpeg 1600w, images/hello-i-m-nik-OOJAUol19oo-unsplash.jpg 3648w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 167px, 220px" alt="" class="gallery-thumbnail"><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "cdnUrl": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
-      "width": 150,
-      "height": 150,
-      "fileName": "image-placeholder.svg",
-      "origFileName": "image-placeholder.svg",
-      "url": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
-      "_id": "example_img",
-      "type": "image",
-      "fileSize": 2063
-    }
-  ],
-  "group": "gallery"
-}</script></a></div>
-    </div>
-  </section>
-  <div class="section">
-    <div class="w-container">
-      <div class="section-title-group">
-        <h2 class="section-heading centered">MERCADO BRASILEIRO</h2>
-        <div class="section-subheading center">2019</div>
+    <header id="hero" class="hero">
+      <div class="flex-container w-container">
+        <div>
+          <h1 class="heading-2">Mercado global de Games</h1>
+          <p>
+            No mundo, a indústria de <strong>jogos eletrônicos</strong> deverá
+            movimentar US$ 152 bilhões em 2019, segundo dados da pesquisa Global
+            Games Market, da Newzoo
+          </p>
+        </div>
+        <div class="hero-image-mask">
+          <img
+            src="images/mercvado.png"
+            srcset="images/mercvado-p-500.png 500w, images/mercvado.png 672w"
+            sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 295.703125px, 443.921875px"
+            alt=""
+            class="hero-image"
+          />
+        </div>
       </div>
-      <div class="w-row">
-        <div class="w-col w-col-6">
-          <div class="white-box"><img src="images/team.png" srcset="images/team-p-500.png 500w, images/team.png 512w" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 161px, 149.796875px" alt="" class="grid-image">
-            <h3>jogadores</h3>
-            <p>Já passam de 75 milhões de jogadores</p>
+    </header>
+    <section id="gallery" class="gallery-2">
+      <div class="centered-container w-container">
+        <h2>COMO CONSEGUIR ATENÇÃO DAS CRIANÇAS?</h2>
+        <div class="gallery-grid-container-2">
+          <a
+            href="#"
+            id="w-node-c2ef62dc97e5-ac753ec9"
+            class="gallery-lightbox w-inline-block w-lightbox"
+            ><img
+              src="images/arturo-rey-0FSNRJPD3Mw-unsplash.jpg"
+              srcset="
+                images/arturo-rey-0FSNRJPD3Mw-unsplash-p-800.jpeg   800w,
+                images/arturo-rey-0FSNRJPD3Mw-unsplash-p-1600.jpeg 1600w,
+                images/arturo-rey-0FSNRJPD3Mw-unsplash-p-2600.jpeg 2600w,
+                images/arturo-rey-0FSNRJPD3Mw-unsplash-p-3200.jpeg 3200w,
+                images/arturo-rey-0FSNRJPD3Mw-unsplash.jpg         6000w
+              "
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 167px, 220px"
+              alt=""
+              class="gallery-thumbnail"
+            />
+            <script type="application/json" class="w-json">
+              {
+                "items": [
+                  {
+                    "cdnUrl": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
+                    "width": 150,
+                    "height": 150,
+                    "fileName": "image-placeholder.svg",
+                    "origFileName": "image-placeholder.svg",
+                    "url": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
+                    "_id": "example_img",
+                    "type": "image",
+                    "fileSize": 2063
+                  }
+                ],
+                "group": "gallery"
+              }
+            </script></a
+          ><a href="#" class="gallery-lightbox w-inline-block w-lightbox"
+            ><img
+              src="images/samantha-sophia-fqyEoItOUGE-unsplash.jpg"
+              srcset="
+                images/samantha-sophia-fqyEoItOUGE-unsplash-p-1080.jpeg 1080w,
+                images/samantha-sophia-fqyEoItOUGE-unsplash-p-1600.jpeg 1600w,
+                images/samantha-sophia-fqyEoItOUGE-unsplash-p-2000.jpeg 2000w,
+                images/samantha-sophia-fqyEoItOUGE-unsplash-p-2600.jpeg 2600w,
+                images/samantha-sophia-fqyEoItOUGE-unsplash-p-3200.jpeg 3200w,
+                images/samantha-sophia-fqyEoItOUGE-unsplash.jpg         5184w
+              "
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 167px, 220px"
+              alt=""
+              class="gallery-thumbnail"
+            />
+            <script type="application/json" class="w-json">
+              {
+                "items": [
+                  {
+                    "cdnUrl": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
+                    "width": 150,
+                    "height": 150,
+                    "fileName": "image-placeholder.svg",
+                    "origFileName": "image-placeholder.svg",
+                    "url": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
+                    "_id": "example_img",
+                    "type": "image",
+                    "fileSize": 2063
+                  }
+                ],
+                "group": "gallery"
+              }
+            </script></a
+          ><a href="#" class="gallery-lightbox w-inline-block w-lightbox"
+            ><img
+              src="images/markus-spiske-OO89_95aUC0-unsplash.jpg"
+              srcset="
+                images/markus-spiske-OO89_95aUC0-unsplash-p-500.jpeg   500w,
+                images/markus-spiske-OO89_95aUC0-unsplash-p-800.jpeg   800w,
+                images/markus-spiske-OO89_95aUC0-unsplash-p-1080.jpeg 1080w,
+                images/markus-spiske-OO89_95aUC0-unsplash-p-1600.jpeg 1600w,
+                images/markus-spiske-OO89_95aUC0-unsplash-p-2000.jpeg 2000w,
+                images/markus-spiske-OO89_95aUC0-unsplash-p-2600.jpeg 2600w,
+                images/markus-spiske-OO89_95aUC0-unsplash-p-3200.jpeg 3200w,
+                images/markus-spiske-OO89_95aUC0-unsplash.jpg         3840w
+              "
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 167px, 220px"
+              alt=""
+              class="gallery-thumbnail"
+            />
+            <script type="application/json" class="w-json">
+              {
+                "items": [
+                  {
+                    "cdnUrl": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
+                    "width": 150,
+                    "height": 150,
+                    "fileName": "image-placeholder.svg",
+                    "origFileName": "image-placeholder.svg",
+                    "url": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
+                    "_id": "example_img",
+                    "type": "image",
+                    "fileSize": 2063
+                  }
+                ],
+                "group": "gallery"
+              }
+            </script></a
+          ><a href="#" class="gallery-lightbox w-inline-block w-lightbox"
+            ><img
+              src="images/jelleke-vanooteghem-chuzevDl4qM-unsplash.jpg"
+              srcset="
+                images/jelleke-vanooteghem-chuzevDl4qM-unsplash-p-1080.jpeg 1080w,
+                images/jelleke-vanooteghem-chuzevDl4qM-unsplash-p-1600.jpeg 1600w,
+                images/jelleke-vanooteghem-chuzevDl4qM-unsplash-p-2000.jpeg 2000w,
+                images/jelleke-vanooteghem-chuzevDl4qM-unsplash-p-2600.jpeg 2600w,
+                images/jelleke-vanooteghem-chuzevDl4qM-unsplash-p-3200.jpeg 3200w,
+                images/jelleke-vanooteghem-chuzevDl4qM-unsplash.jpg         5184w
+              "
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 167px, 220px"
+              alt=""
+              class="gallery-thumbnail"
+            />
+            <script type="application/json" class="w-json">
+              {
+                "items": [
+                  {
+                    "cdnUrl": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
+                    "width": 150,
+                    "height": 150,
+                    "fileName": "image-placeholder.svg",
+                    "origFileName": "image-placeholder.svg",
+                    "url": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
+                    "_id": "example_img",
+                    "type": "image",
+                    "fileSize": 2063
+                  }
+                ],
+                "group": "gallery"
+              }
+            </script></a
+          ><a href="#" class="gallery-lightbox w-inline-block w-lightbox"
+            ><img
+              src="images/hello-i-m-nik-OOJAUol19oo-unsplash.jpg"
+              srcset="
+                images/hello-i-m-nik-OOJAUol19oo-unsplash-p-500.jpeg   500w,
+                images/hello-i-m-nik-OOJAUol19oo-unsplash-p-800.jpeg   800w,
+                images/hello-i-m-nik-OOJAUol19oo-unsplash-p-1080.jpeg 1080w,
+                images/hello-i-m-nik-OOJAUol19oo-unsplash-p-1600.jpeg 1600w,
+                images/hello-i-m-nik-OOJAUol19oo-unsplash.jpg         3648w
+              "
+              sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 167px, 220px"
+              alt=""
+              class="gallery-thumbnail"
+            />
+            <script type="application/json" class="w-json">
+              {
+                "items": [
+                  {
+                    "cdnUrl": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
+                    "width": 150,
+                    "height": 150,
+                    "fileName": "image-placeholder.svg",
+                    "origFileName": "image-placeholder.svg",
+                    "url": "https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg",
+                    "_id": "example_img",
+                    "type": "image",
+                    "fileSize": 2063
+                  }
+                ],
+                "group": "gallery"
+              }
+            </script></a
+          >
+        </div>
+      </div>
+    </section>
+    <div class="section">
+      <div class="w-container">
+        <div class="section-title-group">
+          <h2 class="section-heading centered">MERCADO BRASILEIRO</h2>
+          <div class="section-subheading center">2019</div>
+        </div>
+        <div class="w-row">
+          <div class="w-col w-col-6">
+            <div class="white-box">
+              <img
+                src="images/team.png"
+                srcset="images/team-p-500.png 500w, images/team.png 512w"
+                sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 161px, 149.796875px"
+                alt=""
+                class="grid-image"
+              />
+              <h3>jogadores</h3>
+              <p>Já passam de 75 milhões de jogadores</p>
+            </div>
           </div>
-        </div>
-        <div class="w-col w-col-6">
-          <div class="white-box"><img src="images/money-1.png" srcset="images/money-1-p-500.png 500w, images/money-1.png 512w" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 161px, 149.796875px" alt="" class="grid-image">
-            <h3>Total</h3>
-            <p>Total geral em 2019 em bilhões de reais</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section accent">
-    <div class="w-container">
-      <div class="section-title-group">
-        <h2 class="section-heading centered white">O Roblox</h2>
-      </div>
-      <div class="w-row">
-        <div class="w-col w-col-4">
-          <div class="white-box transparent"><img src="images/196901.jpg" width="200" height="200" srcset="images/196901-p-500.jpeg 500w, images/196901-p-800.jpeg 800w, images/196901.jpg 2600w" sizes="(max-width: 479px) 71vw, (max-width: 767px) 200px, (max-width: 991px) 199.328125px, 200px" alt="" class="image">
-            <p class="white-text"><strong>O Roblox é uma plataforma global onde milhões de pessoas se reúnem todos os dias em mundos tridimensionais gerados pelos jogadores</strong></p>
-          </div>
-        </div>
-        <div class="w-col w-col-4">
-          <div class="white-box transparent"><img src="images/q.png" width="200" height="200" srcset="images/q-p-500.png 500w, images/q-p-800.png 800w, images/q-p-1080.png 1080w, images/q.png 1192w" sizes="(max-width: 479px) 71vw, (max-width: 767px) 200px, (max-width: 991px) 199.328125px, 200px" alt="" class="image-2">
-            <p class="white-text"><strong>Foram 155 Milhões de jogadores em Maio de 2020<br>Segundo dados da produtora 17% na america Latina</strong></p>
-          </div>
-        </div>
-        <div class="w-col w-col-4">
-          <div class="w-layout-grid grid"><img src="images/42f5a6ac1d6b9b9e171a8f7e82373cf7.jpg" width="100" height="100" srcset="images/42f5a6ac1d6b9b9e171a8f7e82373cf7-p-500.jpeg 500w, images/42f5a6ac1d6b9b9e171a8f7e82373cf7.jpg 768w" sizes="100px" id="w-node-a669a2420d4c-ac753ec9" alt="" class="image"><img src="images/OScief97_400x400.jpg" width="100" height="100" id="w-node-19872bbd1deb-ac753ec9" alt="" class="image"><img src="images/f3366d7fd4ee2c50b20c4f119fb21a06.jpg" width="100" height="100" srcset="images/f3366d7fd4ee2c50b20c4f119fb21a06-p-500.jpeg 500w, images/f3366d7fd4ee2c50b20c4f119fb21a06.jpg 768w" sizes="100px" alt="" class="image"><img src="images/967b106f022bade0abf4262f667efb50.jpg" width="100" height="100" srcset="images/967b106f022bade0abf4262f667efb50-p-500.jpeg 500w, images/967b106f022bade0abf4262f667efb50.jpg 768w" sizes="100px" alt="" class="image"></div>
-          <p class="white-text"><strong>MILHARES DE JOGOS<br>Adopt me! </strong>8.7 Bilhões de visitas.<strong><br>Blox Burg </strong>2.7 Bilhões de visitas.<strong><br>Meepcity </strong>6.2 Bilhões de visitas.<strong><br>Skyblox </strong> 183 Milhões de visitas (2 meses)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="w-container">
-      <div class="section-title-group">
-        <h2 class="section-heading centered">Sobre o jogo</h2>
-      </div>
-      <div data-duration-in="300" data-duration-out="100" class="tabs-wrapper w-tabs">
-        <div class="tab-menu w-tab-menu"><a data-w-tab="Tab 1" class="button tab w-inline-block w-tab-link w--current"></a></div>
-        <div class="w-tab-content">
-          <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
-            <div>
-              <div style="padding-top:56.17021276595745%" class="w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fe9w8W3WV_sc%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3De9w8W3WV_sc&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fe9w8W3WV_sc%2Fhqdefault.jpg&args=start%3D2678&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" scrolling="no" title="YouTube embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe></div>
-              <h2>Pan News Entrevista Inovação - 07/07/20<br></h2>
+          <div class="w-col w-col-6">
+            <div class="white-box">
+              <img
+                src="images/money-1.png"
+                srcset="images/money-1-p-500.png 500w, images/money-1.png 512w"
+                sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 161px, 149.796875px"
+                alt=""
+                class="grid-image"
+              />
+              <h3>Total</h3>
+              <p>Total geral em 2019 em bilhões de reais</p>
             </div>
           </div>
         </div>
       </div>
-      <blockquote class="block-quote">O Jogador viverá as aventuras de ser um bombeiro voluntário. Ele começa como cidadão comum, com missões simples a realizar, como salvar animais de estimação. Todas as missões podem ser concluídas em equipe. Quando um jogador tem sucesso, ele recebe experiência e pode ser promovido para uma nova patente.<br>Algumas missões serão contrra o tempo e outras serão quebra-cabeças.<br>‍</blockquote>
     </div>
-  </div>
-  <section id="contact-form" class="contact-form">
-    <div class="w-container">
-      <h2>Contato</h2>
-      <p class="paragraph">Há um publico infantil jogando Roblox diariamente, nós Podemos Ajudar a sua empresa!</p>
-      <div id="formInstructions" class="small-text"><em>Campos marcados com asterisco (*) são obrigatórios</em></div>
-      <div class="w-form">
-        <form id="ajaxForm" name="wf-form-Contact-Form" data-name="Contact Form" method="post">
-          <div class="contact-form-grid">
-            <div id="w-node-c3c41eb675d2-ac753ec9"><label for="First-Name" id="contact-first-name">Nome * </label><input type="text" class="w-input" maxlength="256" name="First-Name" data-name="First Name" id="First-Name" required=""></div>
-            <div id="w-node-c3c41eb675d6-ac753ec9"><label for="Last-Name" id="contact-last-name">Sobre nome *</label><input type="text" class="w-input" maxlength="256" name="Last-Name" data-name="Last Name" id="Last-Name" required=""></div>
-            <div id="w-node-c3c41eb675da-ac753ec9"><label for="Email" id="contact-email">Email *</label><input type="email" class="w-input" maxlength="256" name="Email" data-name="Email" id="Email" required=""></div>
-            <div id="w-node-c3c41eb675de-ac753ec9"><label for="Contact-Phone-Number" id="contact-phone">Número de telefone</label><input type="tel" class="w-input" maxlength="256" name="Contact-Phone-Number" data-name="Contact Phone Number" id="Contact-Phone-Number"></div>
-            <div id="w-node-c3c41eb675e2-ac753ec9"><label for="Message" id="contact-message">Mensagem</label><textarea data-name="Message" maxlength="5000" id="Message" name="Message" class="w-input"></textarea></div>
-          </div><input type="submit" value="Enviar Mensagem" data-wait="Enviando..." class="button full-width w-button"></form>
-      </div>
-    </div>
-  </section>
-  <div class="footer">
-    <div class="w-container">
-      <div class="columns w-row">
-        <div class="spc w-col w-col-6">
-          <h1>Sobre a Labs Studio</h1>
-          <p class="paragraph-2">Somos a junção de formação acadêmica com experiência de mercado. O nosso objetivo é facilitar a atualização de tecnologias, melhorar processos de desenvolvimento de software e promover a cultura ágil.</p>
+    <div class="section accent">
+      <div class="w-container">
+        <div class="section-title-group">
+          <h2 class="section-heading centered white">O Roblox</h2>
         </div>
-        <div class="spc w-col w-col-6"></div>
+        <div class="w-row">
+          <div class="w-col w-col-4">
+            <div class="white-box transparent">
+              <img
+                src="images/196901.jpg"
+                width="200"
+                height="200"
+                srcset="
+                  images/196901-p-500.jpeg  500w,
+                  images/196901-p-800.jpeg  800w,
+                  images/196901.jpg        2600w
+                "
+                sizes="(max-width: 479px) 71vw, (max-width: 767px) 200px, (max-width: 991px) 199.328125px, 200px"
+                alt=""
+                class="image"
+              />
+              <p class="white-text">
+                <strong
+                  >O Roblox é uma plataforma global onde milhões de pessoas se
+                  reúnem todos os dias em mundos tridimensionais gerados pelos
+                  jogadores</strong
+                >
+              </p>
+            </div>
+          </div>
+          <div class="w-col w-col-4">
+            <div class="white-box transparent">
+              <img
+                src="images/q.png"
+                width="200"
+                height="200"
+                srcset="
+                  images/q-p-500.png   500w,
+                  images/q-p-800.png   800w,
+                  images/q-p-1080.png 1080w,
+                  images/q.png        1192w
+                "
+                sizes="(max-width: 479px) 71vw, (max-width: 767px) 200px, (max-width: 991px) 199.328125px, 200px"
+                alt=""
+                class="image-2"
+              />
+              <p class="white-text">
+                <strong
+                  >Foram 155 Milhões de jogadores em Maio de 2020<br />Segundo
+                  dados da produtora 17% na america Latina</strong
+                >
+              </p>
+            </div>
+          </div>
+          <div class="w-col w-col-4">
+            <div class="w-layout-grid grid">
+              <img
+                src="images/42f5a6ac1d6b9b9e171a8f7e82373cf7.jpg"
+                width="100"
+                height="100"
+                srcset="
+                  images/42f5a6ac1d6b9b9e171a8f7e82373cf7-p-500.jpeg 500w,
+                  images/42f5a6ac1d6b9b9e171a8f7e82373cf7.jpg        768w
+                "
+                sizes="100px"
+                id="w-node-a669a2420d4c-ac753ec9"
+                alt=""
+                class="image"
+              /><img
+                src="images/OScief97_400x400.jpg"
+                width="100"
+                height="100"
+                id="w-node-19872bbd1deb-ac753ec9"
+                alt=""
+                class="image"
+              /><img
+                src="images/f3366d7fd4ee2c50b20c4f119fb21a06.jpg"
+                width="100"
+                height="100"
+                srcset="
+                  images/f3366d7fd4ee2c50b20c4f119fb21a06-p-500.jpeg 500w,
+                  images/f3366d7fd4ee2c50b20c4f119fb21a06.jpg        768w
+                "
+                sizes="100px"
+                alt=""
+                class="image"
+              /><img
+                src="images/967b106f022bade0abf4262f667efb50.jpg"
+                width="100"
+                height="100"
+                srcset="
+                  images/967b106f022bade0abf4262f667efb50-p-500.jpeg 500w,
+                  images/967b106f022bade0abf4262f667efb50.jpg        768w
+                "
+                sizes="100px"
+                alt=""
+                class="image"
+              />
+            </div>
+            <p class="white-text">
+              <strong>MILHARES DE JOGOS<br />Adopt me! </strong>8.7 Bilhões de
+              visitas.<strong><br />Blox Burg </strong>2.7 Bilhões de
+              visitas.<strong><br />Meepcity </strong>6.2 Bilhões de
+              visitas.<strong><br />Skyblox </strong> 183 Milhões de visitas (2
+              meses)
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="footer center">
-    <div class="w-container">
-      <div class="footer-text">Copyright Labs Studio</div><img src="images/back5.png" width="50" srcset="images/back5-p-500.png 500w, images/back5-p-800.png 800w, images/back5-p-1080.png 1080w, images/back5.png 1920w" sizes="50px" alt=""></div>
-  </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5b76c1b5f942955165753ec4" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-  <script src="sweetalert2.all.min.js"></script>
-<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
-<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
-  <script src="js/enviarform.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-</body>
+    <div class="section">
+      <div class="w-container">
+        <div class="section-title-group">
+          <h2 class="section-heading centered">Sobre o jogo</h2>
+        </div>
+        <div
+          data-duration-in="300"
+          data-duration-out="100"
+          class="tabs-wrapper w-tabs"
+        >
+          <div class="tab-menu w-tab-menu">
+            <a
+              data-w-tab="Tab 1"
+              class="button tab w-inline-block w-tab-link w--current"
+            ></a>
+          </div>
+          <div class="w-tab-content">
+            <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+              <div>
+                <div
+                  style="padding-top: 56.17021276595745%;"
+                  class="w-video w-embed"
+                >
+                  <iframe
+                    class="embedly-embed"
+                    src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fe9w8W3WV_sc%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3De9w8W3WV_sc&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fe9w8W3WV_sc%2Fhqdefault.jpg&args=start%3D2678&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube"
+                    scrolling="no"
+                    title="YouTube embed"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen="true"
+                  ></iframe>
+                </div>
+                <h2>Pan News Entrevista Inovação - 07/07/20<br /></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <blockquote class="block-quote">
+          O Jogador viverá as aventuras de ser um bombeiro voluntário. Ele
+          começa como cidadão comum, com missões simples a realizar, como salvar
+          animais de estimação. Todas as missões podem ser concluídas em equipe.
+          Quando um jogador tem sucesso, ele recebe experiência e pode ser
+          promovido para uma nova patente.<br />Algumas missões serão contrra o
+          tempo e outras serão quebra-cabeças.<br />‍
+        </blockquote>
+      </div>
+    </div>
+    <section id="contact-form" class="contact-form">
+      <div class="w-container">
+        <h2>Contato</h2>
+        <p class="paragraph">
+          Há um publico infantil jogando Roblox diariamente, nós Podemos Ajudar
+          a sua empresa!
+        </p>
+        <div id="formInstructions" class="small-text">
+          <em>Campos marcados com asterisco (*) são obrigatórios</em>
+        </div>
+        <div class="w-form">
+          <form
+            id="ajaxForm"
+            name="wf-form-Contact-Form"
+            data-name="Contact Form"
+            method="post"
+          >
+            <div class="contact-form-grid">
+              <div id="w-node-c3c41eb675d2-ac753ec9">
+                <label for="First-Name" id="contact-first-name">Nome * </label
+                ><input
+                  type="text"
+                  class="w-input"
+                  maxlength="256"
+                  name="First-Name"
+                  data-name="First Name"
+                  id="First-Name"
+                  required=""
+                />
+              </div>
+              <div id="w-node-c3c41eb675d6-ac753ec9">
+                <label for="Last-Name" id="contact-last-name"
+                  >Sobre nome *</label
+                ><input
+                  type="text"
+                  class="w-input"
+                  maxlength="256"
+                  name="Last-Name"
+                  data-name="Last Name"
+                  id="Last-Name"
+                  required=""
+                />
+              </div>
+              <div id="w-node-c3c41eb675da-ac753ec9">
+                <label for="Email" id="contact-email">Email *</label
+                ><input
+                  type="email"
+                  class="w-input"
+                  maxlength="256"
+                  name="Email"
+                  data-name="Email"
+                  id="Email"
+                  required=""
+                />
+              </div>
+              <div id="w-node-c3c41eb675de-ac753ec9">
+                <label for="Contact-Phone-Number" id="contact-phone"
+                  >Número de telefone</label
+                ><input
+                  type="tel"
+                  class="w-input"
+                  maxlength="256"
+                  name="Contact-Phone-Number"
+                  data-name="Contact Phone Number"
+                  id="Contact-Phone-Number"
+                />
+              </div>
+              <div id="w-node-c3c41eb675e2-ac753ec9">
+                <label for="Message" id="contact-message">Mensagem</label
+                ><textarea
+                  data-name="Message"
+                  maxlength="5000"
+                  id="Message"
+                  name="Message"
+                  class="w-input"
+                ></textarea>
+              </div>
+            </div>
+            <input
+              type="submit"
+              value="Enviar Mensagem"
+              data-wait="Enviando..."
+              class="button full-width w-button"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="w-container">
+        <div class="columns w-row">
+          <div class="spc w-col w-col-6">
+            <h1>Sobre a Labs Studio</h1>
+            <p class="paragraph-2">
+              Somos a junção de formação acadêmica com experiência de mercado. O
+              nosso objetivo é facilitar a atualização de tecnologias, melhorar
+              processos de desenvolvimento de software e promover a cultura
+              ágil.
+            </p>
+          </div>
+          <div class="spc w-col w-col-6"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer center">
+      <div class="w-container">
+        <div class="footer-text">Copyright Labs Studio</div>
+        <img
+          src="images/back5.png"
+          width="50"
+          srcset="
+            images/back5-p-500.png   500w,
+            images/back5-p-800.png   800w,
+            images/back5-p-1080.png 1080w,
+            images/back5.png        1920w
+          "
+          sizes="50px"
+          alt=""
+        />
+      </div>
+    </div>
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5b76c1b5f942955165753ec4"
+      type="text/javascript"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="js/webflow.js" type="text/javascript"></script>
+    <script src="js/enviarform.js" type="text/javascript"></script>
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  </body>
 </html>
