@@ -110,7 +110,17 @@ document.querySelectorAll('.square').forEach(item => {
     item.addEventListener('mouseout', slideInfo)
 })
 
-new Glider(document.querySelector('.glider'), {
+
+const carousels = document.querySelectorAll(".glider");
+
+// Object.values(carousels).map(carousel => {
+//       const slider = new Glider(carousel, {
+//         type: "carousel"
+//       });
+//       slider.mount();
+// });
+
+const t1 = new Glider(document.querySelector('.glider'), {
     slidesToShow: 1,
     slidesToScroll: 1,
     // draggable: true,
@@ -119,6 +129,36 @@ new Glider(document.querySelector('.glider'), {
       prev: '.glider-prev',
       next: '.glider-next'
     },
+    rewind: true,
+    scrollLock: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      /* {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }, */
+    ]
+
+})
+
+const t2 = new Glider(document.querySelector('.quem-somos-glider'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    dots: '.glider-dots',
+    // arrows: {
+    //   prev: '.quem-somos-prev',
+    //   next: '.quem-somos-next'
+    // },
     rewind: true,
     scrollLock: true,
     responsive: [

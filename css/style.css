@@ -129,6 +129,19 @@ body {
     transform: translateZ(-1px) scale(2); */
     /* z-index: -1; */
 }
+#quem-somos .controls {
+    display: none;
+}
+#quem-somos .glider.draggable {
+    cursor: default;
+}
+#quem-somos button:focus {
+    outline: none;
+}
+#quem-somos .glider-dot.active {
+    background: #008c8f;
+}
+
 #portfolio {
     background-color: #008c8f;
 }
@@ -420,7 +433,7 @@ body {
 
 .inicio-logo {
     width: 330px;
-    position: absolute;
+    position: fixed;
     top: calc(100vh - 80px);
     right: 50px;
     transition: .275s;
@@ -489,13 +502,36 @@ body {
     color: #008c8f;
 }
 
-#chevron-down {
+#next-section {
     width: 3.5%;
-    opacity: 0;
     position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    overflow: visible;
+
+    /* background: #00eaee; */
+    height: 50px;
+    border-radius: 0;
+    box-shadow: none;
+
+    height: 50px;
+    min-width: 60px;
+}
+#next-section .square-content {
+    transform: scale(0.5) translateY(50%);
+}
+#chevron-down {
+    /* width: 80%; */
+    opacity: 0;
+
+    bottom: 0;
+    position: absolute;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 
     animation: chvronShake .775s ease-out;
 
@@ -752,7 +788,7 @@ body {
 
 /* Footer */
 .footer {
-    position: absolute;
+    position: fixed;
     font-size: .8rem;
     height: 40px;
     left: 0;
@@ -853,7 +889,7 @@ h1 {
     width: 50%;
     overflow: hidden;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 25px;
     transform: scale(0.9);
     transition: all .4s ease;
 }
@@ -990,6 +1026,16 @@ h1 {
         visibility: visible;
     }
 }
+@media (max-width: 599px) {
+    #quem-somos .controls {
+        display: block;
+    }
+    #quem-somos .glider.draggable {
+        user-select: none;
+        cursor: -webkit-grab;
+        cursor: grab;
+    }
+}
 @media  (min-width: 500px) and (max-width: 575px) {
     #logo-home {
         width: 80%;
@@ -1019,7 +1065,7 @@ h1 {
 }
 @media (max-width: 500px) {
 
-    #chevron-down {
+    #next-section {
         width: 6%;
     }
 
