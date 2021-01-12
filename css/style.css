@@ -434,6 +434,7 @@ body {
 .inicio-logo {
     width: 330px;
     position: fixed;
+    z-index: 0;
     top: calc(100vh - 80px);
     right: 50px;
     transition: .275s;
@@ -517,6 +518,7 @@ body {
 
     height: 50px;
     min-width: 60px;
+    z-index: 1;
 }
 #next-section .square-content {
     transform: scale(0.5) translateY(50%);
