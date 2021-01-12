@@ -435,7 +435,7 @@ body {
     width: 330px;
     position: fixed;
     z-index: 0;
-    top: calc(100vh - 80px);
+    bottom: 40px;
     right: 50px;
     transition: .275s;
 }
