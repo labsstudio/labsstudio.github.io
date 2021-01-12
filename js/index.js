@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             if (entry.isIntersecting) {
                                 currentNav.classList.add("selected")
                                 if (isSpy) {
-                                    window.location.href = window.location.href.replace(/#(\D+)/g, `#${elem.id}`)
+                                    const url = window.location.href
+                                    window.location.href = !url.match(/#(\D+)/g) ? `${url}#inicio` : url.replace(/#(\D+)/g, `#${elem.id}`)
                                     menuSectionSelected()
                                 } else {
                                     setTimeout(() => {
