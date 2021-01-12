@@ -523,6 +523,10 @@ body {
 #next-section .square-content {
     transform: scale(0.5) translateY(50%);
 }
+.is-open #next-section {
+    opacity: 0;
+    visibility: hidden;
+}
 #chevron-down {
     /* width: 80%; */
     opacity: 0;
