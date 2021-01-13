@@ -1,12 +1,13 @@
 const $ = document.querySelector.bind(document)
-const menuItems = document.querySelectorAll('.nav-menu a[href^="#"]')
+const $$ = document.querySelectorAll.bind(document)
+const menuItems = $$('.nav-menu a[href^="#"]')
 
 let isSpy = true
 let section = 'inicio'
 
 document.addEventListener("DOMContentLoaded", () => {
     (function scrollSpy() {
-        const targets = document.querySelectorAll(".bloco"),
+        const targets = $$(".bloco"),
             options = {
                 threshold: 0.5
             }
@@ -58,27 +59,40 @@ function menuToggle (event) {
 }
 
 function menuSectionSelected () {
+    // console.log('activated', $$('.activated'))
+    // $('.active').classList.remove('activated')
+
     setTimeout(() => {
         const style = window.location.href.match(/#(\D+)/g)[0].replace('#', '')
+        const activated = $$('.activated')
     
         $('#menu').classList.remove(section)
         $('#menu').classList.add(style)
     
         section = style
 
-        $('.active').classList.remove('active')
-        $(`#${section}`).classList.add('active')
+        if (activated.length) {
+            activated.forEach(item => {
+                item.classList.remove('activated')
+            })
+        }
+        $(`#${section}`).classList.add('activated')
 
         $('#next-section').setAttribute('href', nextSection())
     }, 100)
 }
 
 function slideInfo (event) {
+    const text = $(`p[data-id='${event.target.id}']`)
     if (event.type === 'mouseover') {
-        $(`p[data-id='${event.target.id}']`).classList.add('show')
+        if (text) {
+            text.classList.add('show')
+        }
         $('.slider-tip').classList.add('hide')
     } else {
-        $(`p[data-id='${event.target.id}']`).classList.remove('show')
+        if (text) {
+            text.classList.remove('show')
+        }
         $('.slider-tip').classList.remove('hide')
     }
 }
@@ -104,14 +118,14 @@ $('#next-section').addEventListener('click', function() {
     menuSectionSelected()
 })
 
-document.querySelectorAll('.square').forEach(item => {
+$$('.square').forEach(item => {
 
     item.addEventListener('mouseover', slideInfo)
     item.addEventListener('mouseout', slideInfo)
 })
 
 
-const carousels = document.querySelectorAll(".glider");
+const carousels = $$(".glider");
 
 // Object.values(carousels).map(carousel => {
 //       const slider = new Glider(carousel, {

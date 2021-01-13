@@ -694,8 +694,8 @@ body {
     overflow: visible;
     transition: all .275s ease;
 }
-.active #gamificacao-icon,
-.active #jogos-icon {
+.activated #gamificacao-icon,
+.activated #jogos-icon {
     opacity: 1;
 }
 .puzzle,
@@ -707,13 +707,13 @@ body {
 	fill: #54ECC4;
 }
 
-.active #gamificacao-icon g > g:first-child {
+.activated #gamificacao-icon g > g:first-child {
     opacity: 0;
     transform: translateY(-390px);
     animation: fadeInPaper 1s ease-out;
     animation-fill-mode: forwards;
 }
-.active #gamificacao-icon g > g:last-child {
+.activated #gamificacao-icon g > g:last-child {
     transform: rotate(-100deg);
     animation: fadeInPuzzle 1s ease-in-out;
     animation-fill-mode: forwards;
@@ -735,12 +735,12 @@ body {
         transform: rotate(0deg);
     }
 }
-.active #jogos-icon .play {
+.activated #jogos-icon .play {
     transform: translateX(-390px);
     animation: fadeInPlay 1s ease-out;
     animation-fill-mode: forwards;
 }
-.active #jogos-icon .play ~ g {
+.activated #jogos-icon .play ~ g {
     transform: scale(.5);
     animation: fadeInController 1s ease-out;
     animation-fill-mode: forwards;
@@ -760,8 +760,8 @@ body {
 .cards p {
     opacity: 0;
 }
-.active .cards span,
-.active .cards p {
+.activated .cards span,
+.activated .cards p {
     animation: fadeInText 1.5s ease-out;
     animation-fill-mode: forwards;
 }
@@ -796,6 +796,8 @@ body {
 /* Footer */
 .footer {
     display: flex;
+    opacity: 0;
+    visibility: hidden;
     justify-content: flex-end;
     position: fixed;
     font-size: .8rem;
@@ -804,9 +806,16 @@ body {
     right: 0;
     bottom: 0;
     padding-right: 30px;
+    z-index: 5;
+    color: #e3fffa;
+    transition: all .275s ease;
 }
 .footer p {
     margin-top: auto;
+}
+#contato.activated ~ .footer {
+    opacity: 1;
+    visibility: visible;
 }
 
 .footer-line {
