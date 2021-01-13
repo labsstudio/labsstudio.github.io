@@ -803,7 +803,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0 30px;
+    padding-right: 30px;
 }
 .footer p {
     margin-top: auto;
