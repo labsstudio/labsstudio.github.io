@@ -382,6 +382,7 @@ body {
     position: absolute;
     top: 35px;
     right: 30px;
+    transition: all .275s;
 }
 #menu.inicio ~ .nav-logo,
 #menu.quem-somos ~ .nav-logo,
@@ -794,13 +795,18 @@ body {
 
 /* Footer */
 .footer {
+    display: flex;
+    justify-content: flex-end;
     position: fixed;
     font-size: .8rem;
-    height: 40px;
+    height: 60px;
     left: 0;
     right: 0;
     bottom: 0;
     padding: 0 30px;
+}
+.footer p {
+    margin-top: auto;
 }
 
 .footer-line {
@@ -1120,6 +1126,52 @@ h1 {
     .slider-tip {
         opacity: 1;
         visibility: visible;
+    }
+
+    #menu.inicio.is-open ~ .nav-logo,
+    #menu.quem-somos.is-open ~ .nav-logo,
+    #menu.portfolio.is-open ~ .nav-logo,
+    #menu.contato.is-open ~ .nav-logo {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@media (max-width: 360px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .p-m {
+        margin: 1rem 0;
+        font-size: 1.1rem;
+    }
+    .p-s {
+        font-size: 1rem;
+    }
+    #quem-somos .cards span {
+        font-size: 1.4rem;
+    }
+    #quem-somos .cards p {
+        font-size: 1rem;
+    }
+
+    #logo-contato {
+        transform: translate(-80%, 75%);
+    }
+}
+/* screen and (max-width: 995px) ,  */
+@media screen and (max-height: 520px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .p-m {
+        margin: 1rem 0;
+        font-size: 1.4rem;
+    }
+    .p-s.mt-5 {
+        margin-top: 1rem !important;
+    }
+    .p-s {
+        font-size: 1.1rem;
     }
 }
 
