@@ -1285,3 +1285,33 @@ hr {
     background: #bb0000;
     color: white;
 }
+
+#not-found-page {
+    color: #859a96;
+    background-color: #ffffff;
+}
+#not-found-page h1,
+#not-found-page h2 {
+    color: #28393a;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.button-box button, .button-box a {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.475rem 2.5rem;
+}
+.btn-default, a.btn-default {
+    border-radius: 50px;
+    color: #fff;
+    background-color: #45d8d9;
+    /* background-color: #008c8f; */
+}
+.btn-solid-blue:hover {
+    background-color: #42c1c2;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(69, 216, 217, 0.25);
+}
